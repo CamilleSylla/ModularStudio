@@ -1,0 +1,15 @@
+.wrapper {
+    padding: 1.5vh 2vw 1.5vh 2vw;
+    border: none;
+    background: var(--deep-purple);
+    color: var(--text-color);
+    border: 4px solid #f2f2f2;
+    -webkit-box-shadow: 10px 10px 0px 0px var(--pink); 
+    box-shadow: 10px 10px 0px 0px var(--pink);
+    cursor: pointer;
+    transition: all ease .5s;
+    &:hover {
+        -webkit-box-shadow: 5px 5px 0px 0px var(--pink); 
+        box-shadow: 5px 5px 0px 0px var(--pink);
+    }
+}

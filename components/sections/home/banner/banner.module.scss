@@ -1,0 +1,33 @@
+.wrapper {
+    background: url("/assets/img/back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .text {
+        width: 40%;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 10%;
+        transform: translate3d(0, -50%, 0);
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            width: 100%;
+        }
+        p {
+            padding-top: 5vh;
+            width: 80%;
+        }
+        span {
+            color: var(--pink);
+        }
+    }
+    img {
+        z-index: 1;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        height: 75%;
+    }
+}
