@@ -1,0 +1,12 @@
+.wrapper {
+    width: 30%;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    position: absolute;
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        margin-top: 5vh;
+    }
+}

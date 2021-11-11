@@ -13,7 +13,7 @@ export default function Navbar() {
     },
     {
       label: "Showcase",
-      link: "/",
+      link: "/showcase",
     },
     {
       label: "Studio",
@@ -44,6 +44,9 @@ export default function Navbar() {
 
   return (
     <nav className={style.wrapper}>
+      <Link href='/'>
+      <img src="/assets/logo.svg"/>
+      </Link>  
       <Menu />
     </nav>
   );

@@ -1,5 +1,7 @@
-import Head from 'next/head'
-import Banner from '../components/sections/home/banner/Banner'
+import Head from "next/head";
+import Arguments from "../components/sections/home/args/Arguments";
+import Banner from "../components/sections/home/banner/Banner";
+import PageContent from "../components/sections/home/offer/Offer";
 
 export default function Home() {
   return (
@@ -11,8 +13,49 @@ export default function Home() {
       </Head>
 
       <main>
-        <Banner/>
+        <Banner />
+        <Arguments />
+        {pageContent.map((el, i ) => {
+          return <PageContent content={el} i={i}/>
+        })}
       </main>
     </div>
-  )
+  );
 }
+
+export const pageContent = [
+  {
+    label: "Des offres adaptées à tous",
+    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula nec augue aliquam, non interdum ante rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    button: {
+      link: "/offres",
+      text: "Nos offres",
+    },
+    img: "/assets/illustration/bag.svg",
+    left: "15%",
+    leftImg: "55%",
+  },
+  {
+    label: "Existant ou sur mesure, la solutions n'appartient qu'a vous !",
+    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula nec augue aliquam, non interdum ante rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    button: {
+      link: "/showcase",
+      text: "Consulter",
+    },
+    img: "/assets/illustration/build.svg",
+    left: "55%",
+    leftImg: "15%",
+  },
+  {
+    label: "Le Showcase",
+    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula nec augue aliquam, non interdum ante rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    button: {
+      link: "/showcase",
+      text: "Consulter",
+    },
+    img: "/assets/illustration/build.svg",
+    left: "55%",
+    leftImg: "15%",
+  },
+  
+];
