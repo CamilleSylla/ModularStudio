@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { generateRamdomPosition } from '../../../tools/global'
 import style from './backshape.module.scss'
 
@@ -11,17 +11,13 @@ export default function BackShape ({children}) {
     // const height = layout.offsetHeight
     console.log();
     
-    useEffect(() => {
-        setLoading(!loading)
-        setLayout(document.getElementsByTagName('body')[0])
+    // const div =  backShape.current.appendChild(Circle())
 
-    //    document.body.appendChild(<Circle/>)
-        
 
-    }, [])
 
-    const Circle = () => {
-        const position = generateRamdomPosition(layout.offsetWidth, layout.offsetHeight)
+    let circle =[]
+const Circle = () => {
+        const position = generateRamdomPosition(backShape.current.offsetWidth, backShape.current.offsetHeight)
         
         return (
             <div style={{left: position.positionX, top: position.positionY}} >
@@ -30,9 +26,15 @@ export default function BackShape ({children}) {
         )
     }
 
+    for (let i = 0; i < 10 ; i++) {
+        circle.push(<Circle/>)
+    }
+
+    
+
     return (
         <div ref={backShape} className={style.wrapper}>
-            {loading ? null : <Circle/>}
+            {circle}
         </div>
     )
 }

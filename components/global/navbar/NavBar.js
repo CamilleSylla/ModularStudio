@@ -13,7 +13,7 @@ export default function Navbar() {
     },
     {
       label: "Showcase",
-      link: "/showcase",
+      link: "/showcase/themes",
     },
     {
       label: "Studio",

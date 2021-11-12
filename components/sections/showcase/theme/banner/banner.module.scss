@@ -1,0 +1,36 @@
+.wrapper {
+    .title {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+width: 40%;
+        h1 {
+            padding-top: 5vh;
+            font-size: 3rem;
+        }
+    }
+    .illustration {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        img {
+            position: absolute;
+        }
+        .first_img {
+            top: 50%;
+            left: 5%;
+            width: 60%;
+            transform: translate3d(0, -50%, 0);
+        }
+        .second_img {
+            top: 50%;
+            left: 50%;
+            width: 60%;
+            transform: translate3d(-50%, -50%, 0);
+
+        }
+    }
+}
