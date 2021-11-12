@@ -2,6 +2,7 @@ import Head from "next/head";
 import Arguments from "../components/sections/home/args/Arguments";
 import Banner from "../components/sections/home/banner/Banner";
 import PageContent from "../components/sections/home/offer/Offer";
+import Avis from "../components/sections/home/avis/Avis";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         {pageContent.map((el, i ) => {
           return <PageContent content={el} i={i}/>
         })}
+        <Avis/>
       </main>
     </div>
   );
@@ -25,37 +27,47 @@ export default function Home() {
 
 export const pageContent = [
   {
+    icon : "/assets/illustration/cible.png",
     label: "Des offres adaptées à tous",
     para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula nec augue aliquam, non interdum ante rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     button: {
       link: "/offres",
       text: "Nos offres",
     },
-    img: "/assets/illustration/bag.svg",
+    img : [
+      
+      {
+        src: "/assets/illustration/bag.svg",
+        leftImg: "55%",
+      },
+      {
+        src: "/assets/illustration/persowall.png",
+        leftImg: "68.5%",
+        width: "40%"
+      },
+    ],
     left: "15%",
-    leftImg: "55%",
+    
   },
   {
-    label: "Existant ou sur mesure, la solutions n'appartient qu'a vous !",
+    icon : "/assets/illustration/crayon.png",
+    label: "Existant ou sur mesure, vous avez l'ambarra du choix !",
     para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula nec augue aliquam, non interdum ante rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     button: {
       link: "/showcase",
       text: "Consulter",
     },
-    img: "/assets/illustration/build.svg",
     left: "55%",
-    leftImg: "15%",
+    img : [
+      {
+        src: "/assets/illustration/custom.svg",
+        leftImg: "0%",
+        width: "50%"
+      },
+      {
+        src: "/assets/illustration/bighandcustom.svg",
+        leftImg: "15%",
+      },
+    ]
   },
-  {
-    label: "Le Showcase",
-    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula nec augue aliquam, non interdum ante rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    button: {
-      link: "/showcase",
-      text: "Consulter",
-    },
-    img: "/assets/illustration/build.svg",
-    left: "55%",
-    leftImg: "15%",
-  },
-  
 ];
