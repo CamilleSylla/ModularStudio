@@ -12,12 +12,33 @@ width: 40%;
         }
         span {
             div {
-                width: 10vw;
+                width: 12.5vw;
                 text-transform: uppercase;text-align: center;
                 font-weight: 900;
-                padding: 1vw 1vh 1vw 1vh;
+                padding: .5vw .5vh .5vw .5vh;
                 border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
+        }
+        button {
+            color: var(--font-color);
+        }
+    }
+
+    .illustration {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        overflow: hidden;
+        img {
+            width: 70%;
+            position: absolute;
+            left: 50%;
+            bottom: -40%;
+            transform: translate3d(-50%, 0,0);
         }
     }
 }

@@ -6,11 +6,32 @@ export default function Home() {
 
   const content = [
     {
-      label : "Decriver pourquoi vos futur adhérents doivent vous faire confiance",
-      category : "sport",
-      targetWords: ["vos futur", "confiance"],
+      label : "Mettez en avant votre activité grace a votre nouvelle vitrine sur le web !",
+      category : "Vitrine",
+      targetWords: ["votre activité", "vitrine"],
+      ipadImg: "https://images-platform.99static.com//cboee49j3q9KQBMjj4cTKkRY-78=/0x0:1920x1920/fit-in/500x500/99designs-contests-attachments/80/80081/attachment_80081342",
       theme: {
         background: "var(--pink)",
+        color: "var(--dark-purple)"
+      }
+    },
+    {
+      label : "Permettez a votre clientèle de commander en ligne simplement",
+      category : "e-commerce",
+      targetWords: ["vos futur", "confiance"],
+      ipadImg: "https://images-platform.99static.com//ZUU0DJkgfiPJzVKTgSEaii6H9G8=/5x0:1705x1700/fit-in/590x590/99designs-contests-attachments/111/111213/attachment_111213383",
+      theme: {
+        background: "var(--deep-purple)",
+        color: "var(--font-color)"
+      }
+    },
+    {
+      label : "Association, institution, faites ressortir ce pour quoi vous vous battez",
+      category : "Institutionnel",
+      targetWords: ["vos futur", "confiance"],
+      ipadImg: "https://blog.hubspot.com/hs-fs/hubfs/Sparkling%20theme%20demo.jpg?width=599&name=Sparkling%20theme%20demo.jpg",
+      theme: {
+        background: "#F2F2F2",
         color: "var(--dark-purple)"
       }
     },
