@@ -1,0 +1,35 @@
+.wrapper {
+    background: var(--font-color);
+    color: var(--deep-purple);
+    .content {
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate3d(0,-50%,0);
+        h1 {
+            font-size: 3rem;
+            font-weight: 300;
+        }
+        .info {
+            margin-top: 10vh;
+            display: flex;
+            div {
+                width: 50%;
+                h3 {
+                    font-size: .6rem;
+                    letter-spacing: 5px;
+                    color: var(--dark-purple);
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+
+                }
+                p {
+                    margin-top: 2vh;
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+
+}

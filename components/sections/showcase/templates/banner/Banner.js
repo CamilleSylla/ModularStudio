@@ -5,29 +5,38 @@ import style from './banner.module.scss'
 
 export default function Banner ({title, label, background}) {
 
-    const textRef = useRef()
+    const imgRef = useRef()
     const wrapper = useRef()
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
 
-        gsap.to(textRef.current, {
-            x : "+=20%",
-            
-            duration: 1,
+        let maxWidth = 0;
+        const getMaxWidth = () => {
+            maxWidth = 0;
+            maxWidth += wrapper.current.offsetWidth;
+        }
+        getMaxWidth();
+        ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
+
+        gsap.to(imgRef.current, {
+            x: "+=40%",
+            scale: "1.5",
             scrollTrigger: {
-                start: "top top",
-                end: "bottom top",
-            markers: true,
                 trigger: wrapper.current,
-                scrub: true,
+                scrub: .5,
+                start: 'top top',
+                end: () => `+=${maxWidth}`,
+                invalidateOnRefresh: true
+
               }
         })
 
     }, [])
 
     return (
-        <section ref={wrapper} style={{background : `url(${background})`, backgroundSize: "cover"}} className={style.wrapper}>
-            <div ref={textRef}>
+        <section ref={wrapper} className={style.wrapper}>
+            <img ref={imgRef}src={background} />
+            <div>
             <p>{label}</p>
             <h1>{title}</h1>
                 </div>
