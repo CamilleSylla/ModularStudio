@@ -1,0 +1,29 @@
+.wrapper {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    perspective: 1000px;
+    z-index: 2;
+    img {
+        position: absolute;
+    }
+    .laptop {
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0) scale(1.5);
+    }
+    .tablette {
+        top: 25%;
+
+    }
+
+    .phone {
+        top: 20%;
+        right: 0;
+        transform: scale(.8) rotateX(46deg) rotateY(-1deg) rotateZ(-30deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+        transform-style: preserve-3d;
+        }
+}

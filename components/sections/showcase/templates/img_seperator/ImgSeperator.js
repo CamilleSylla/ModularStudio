@@ -12,7 +12,6 @@ export default function ImgSeperator ({img}) {
 
         gsap.registerPlugin(ScrollTrigger)
 
-        console.log(wrapperRef.current.offsetLeft, wrapperRef.current.offsetLeft + wrapperRef.current.offsetWidth);
 
         gsap.from(animRef.current, {
             x : "50%",

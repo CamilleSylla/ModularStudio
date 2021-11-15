@@ -1,6 +1,7 @@
 .wrapper {
     background: var(--font-color);
     color: var(--deep-purple);
+    z-index: 3;
     .content {
         width: 40%;
         position: absolute;

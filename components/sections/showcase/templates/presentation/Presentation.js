@@ -1,6 +1,7 @@
+import Illustration from '../illustration/Illustration'
 import style from './presentation.module.scss'
 
-export default function Presentation ({presentation}) {
+export default function Presentation ({presentation, illustration}) {
 
 
     return (
@@ -18,6 +19,7 @@ export default function Presentation ({presentation}) {
                     </div>
                     </div>
             </article>
+            <Illustration illustration={illustration}/>
         </section>
     )
 }
