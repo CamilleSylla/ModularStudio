@@ -7,12 +7,12 @@ export default function Arguments() {
   const cardContent = [
     {
       icon: "/assets/icon/select.svg",
-      title: "Explorer notre showcase",
+      title: "Explorez",
       label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula.",
     },
     {
       icon: "/assets/icon/talk.svg",
-      title: "Decriver nous votre projet",
+      title: "Discutons du projet",
       label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula.",
     },
     {
