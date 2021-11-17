@@ -9,7 +9,7 @@ export default function Navbar() {
     },
     {
       label: "Offres",
-      link: "/",
+      link: "/offres",
     },
     {
       label: "Showcase",
@@ -17,7 +17,7 @@ export default function Navbar() {
     },
     {
       label: "Studio",
-      link: "/",
+      link: "/studio",
     },
     {
       label: "Blog",

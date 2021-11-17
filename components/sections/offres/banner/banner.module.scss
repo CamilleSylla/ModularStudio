@@ -1,0 +1,43 @@
+.wrapper {
+    background: linear-gradient(169deg, rgba(136,80,191,1) 0%, rgba(132,55,140,1) 100%);
+    .illustration {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 40%;
+        height: 100%;
+        img {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translate3d(0,-50%,0);
+        }
+    }
+    .title {
+        position: absolute;
+        right: 10%;
+        top: 0;
+        width: 40%;
+        height: 100%;
+        .container {
+            position: absolute;
+            top: 50%;
+            transform: translate3d(0, -50%,0);
+            h1 {
+                font-size: 4rem;
+                padding: 1vh 0 2vh 0;
+            }
+            p {
+                width: 90%;
+                padding-top: 1vh;
+            }
+            span {
+                font-size: .7rem;
+                    letter-spacing: 5px;
+                    // color: var(--dark-purple);
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+            }
+        }
+    }
+}

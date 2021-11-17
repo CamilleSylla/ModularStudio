@@ -1,36 +1,38 @@
 import Button from "../../../global/button/Button";
+import Card from "../../../global/card/Card";
+import CenteredTitle from "../../../global/centeredTitle/CenteredTitle";
 import style from "./arguments.module.scss";
 
 export default function Arguments() {
   const cardContent = [
     {
       icon: "/assets/icon/select.svg",
-      label: "Explorer notre showcase",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula nec augue aliquam, non interdum ante rhoncus.",
+      title: "Explorer notre showcase",
+      label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula.",
     },
     {
       icon: "/assets/icon/talk.svg",
-      label: "Decriver nous votre projet",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula nec augue aliquam, non interdum ante rhoncus.",
+      title: "Decriver nous votre projet",
+      label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula.",
     },
     {
       icon: "/assets/icon/happy.svg",
-      label: "Validez et recevez votre site",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula nec augue aliquam, non interdum ante rhoncus.",
+      title: "Validez et livraison",
+      label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula.",
     },
   ];
 
-  const Card = ({ data, i }) => {
-    return (
-      <article className={style.card}>
-        <div className={style.icon}>
-          <img src={data.icon} />
-        </div>
-        <h1>{data.label}</h1>
-        <p>{data.para}</p>
-      </article>
-    );
-  };
+  // const Card = ({ data, i }) => {
+  //   return (
+  //     <article className={style.card}>
+  //       <div className={style.icon}>
+  //         <img src={data.icon} />
+  //       </div>
+  //       <h1>{data.label}</h1>
+  //       <p>{data.para}</p>
+  //     </article>
+  //   );
+  // };
 
   const CardsContainer = () => {
     return (
@@ -57,7 +59,10 @@ export default function Arguments() {
 
   return (
     <section className={style.wrapper}>
-      <Title />
+      <CenteredTitle 
+      title="Louer avec Modular Studio" 
+      label="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ligula nec augue aliquam, non interdum ante rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+      {/* <Title /> */}
       <CardsContainer />
       <div className={style.btnWrapper}>
         <Button text="Showcase" link="/showcase" />

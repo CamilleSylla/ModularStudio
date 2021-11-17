@@ -1,0 +1,45 @@
+.card {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+    background: linear-gradient(169deg, rgba(136,80,191,1) 0%, rgba(132,55,140,1) 100%);
+    
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: 97%;
+        height: 95%;
+        border-radius: 8px;
+        background: #16141c;
+        display: flex;
+        justify-content: space-evenly;
+        img {
+            width: 20%;
+            filter: invert(85%) sepia(71%) saturate(5461%) hue-rotate(186deg) brightness(128%) contrast(90%);
+
+
+        }
+        div {
+            width: 60%;
+            transform: translate3d(0, 25%, 0);
+            h1 {
+                font-family: 'Poppins', sans-serif;
+                font-size: .8rem;
+                text-transform: uppercase;
+            }
+            .seperator {
+                width: 30%;
+                height: 2px;
+                background-color: #F2F2F2;
+                margin: 1vh 0 1.5vh 0;
+            }
+            p {
+                font-size: .7rem;
+                line-height: 1rem;
+            }
+        }
+    }
+}
