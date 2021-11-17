@@ -6,6 +6,16 @@ export default function Home() {
 
   const content = [
     {
+      label : "Créer une présence sur internet rapidement et simplement",
+      category : "Starterz",
+      targetWords: ["Créer", "rapidement"],
+      ipadImg: "https://downloadpsd.cc/wp-content/uploads/image-12682.jpg",
+      theme: {
+        background: "var(--basic-purple)",
+        color: "var(--font-color)"
+      }
+    },
+    {
       label : "Mettez en avant votre activité grace a votre nouvelle vitrine sur le web !",
       category : "Vitrine",
       targetWords: ["votre activité", "vitrine"],
