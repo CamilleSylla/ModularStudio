@@ -3,6 +3,7 @@ import Arguments from "../components/sections/home/args/Arguments";
 import Banner from "../components/sections/home/banner/Banner";
 import PageContent from "../components/sections/home/offer/Offer";
 import Avis from "../components/sections/home/avis/Avis";
+import Starterz from "../components/global/Starterz/Starterz";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         {pageContent.map((el, i ) => {
           return <PageContent content={el} i={i}/>
         })}
+        <Starterz/>
         <Avis/>
       </main>
     </div>

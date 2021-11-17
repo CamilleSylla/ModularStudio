@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Starterz from "../components/global/Starterz/Starterz";
 import PageContent from "../components/sections/home/offer/Offer";
 import Banner from "../components/sections/offres/banner/Banner";
 import Concept from "../components/sections/offres/concept/Concept";
@@ -36,10 +37,11 @@ export default function Offres () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main style={{background: "#16141c"}}>
+      <main >
           <Banner/>
           <Concept/>
           <PageContent content={modular} key="1"/>
+          <Starterz/>
       </main>
     </div>
   );
